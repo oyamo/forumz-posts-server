@@ -1,0 +1,49 @@
+databaseChangeLog:
+  - changeSet:
+      id:  post_schema_20240709_1
+      author: Oyamo Brian
+      runOnChange: false
+      runInTransaction: true
+      changes:
+        sqlFile:
+          path: schema/person.sql
+          encoding: UTF-8
+          relativeToChangelogFile: false
+          endDelimiter: //
+          splitStatements: true
+  - changeSet:
+      id: post_schema_20240709_2
+      author: Oyamo Brian
+      runOnChange: false
+      runInTransaction: true
+      changes:
+        sqlFile:
+          path: schema/connection.sql
+          encoding: UTF-8
+          relativeToChangelogFile: false
+          endDelimiter: //
+          splitStatements: true
+  - changeSet:
+      id: post_schema_20240709_3
+      author: Oyamo Brian
+      runOnChange: false
+      runInTransaction: true
+      changes:
+        sqlFile:
+          path: schema/posts.sql
+          encoding: UTF-8
+          relativeToChangelogFile: false
+          endDelimiter: //
+          splitStatements: true
+  - changeSet:
+      id: post_schema_20240709_4
+      author: Oyamo Brian
+      runOnChange: false
+      runInTransaction: true
+      changes:
+        sqlFile:
+          path: schema/post-media.sql
+          encoding: UTF-8
+          relativeToChangelogFile: false
+          endDelimiter: //
+          splitStatements: true
