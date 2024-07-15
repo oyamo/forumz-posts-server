@@ -3,8 +3,8 @@
 ## Download
 
 ```bash
-git clone git@github.com:oyamo/forumz-post-server.git
-cd forumz-post-server
+git clone git@github.com:oyamo/forumz-posts-server.git
+cd forumz-posts-server
 ```
 
 ## Build
