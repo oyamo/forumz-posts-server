@@ -12,7 +12,7 @@ cd forumz-posts-server
 docker build -t post-server:1.0.0 .
 ```
 
-## Database Migration
+## Liquibase Database Migration
 ```shell
 docker run --rm --network local-sandbox \
     --volume `pwd`/migration:/liquibase/changelog liquibase/liquibase:4.13 \
