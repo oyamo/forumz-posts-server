@@ -30,7 +30,7 @@ databaseChangeLog:
       runInTransaction: true
       changes:
         sqlFile:
-          path: schema/posts.sql
+          path: schema/post.sql
           encoding: UTF-8
           relativeToChangelogFile: false
           endDelimiter: //
@@ -47,3 +47,18 @@ databaseChangeLog:
           relativeToChangelogFile: false
           endDelimiter: //
           splitStatements: true
+  - changeSet:
+      id: post_schema_20241109_1
+      author: Oyamo Brian
+      runOnChange: false
+      runInTransaction: true
+      changes:
+        - addColumn:
+            tableName: person
+            columns:
+              - column:
+                  name: username
+                  type: varchar(32) unique not null
+              - column:
+                  name: email_address
+                  type: varchar(64) unique not null
